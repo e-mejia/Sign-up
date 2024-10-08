@@ -3,57 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Sign up form</title>
   </head>
   <body>
     <!--Left pane -->
 
-    <section class="left-section">
-      <div class="title">
-        <img src="" alt="Odin face" />
-        <p>ODIN</p>
-      </div>
-    </section>
+    <div class="main">
+      <section class="left-section">
+        <img src="./Gardenias.jpg" alt="Gardenia bush" class="" />
 
-    <!--Right pane top portion -->
-    <div class="top-section">
-      <p class="top-info">
-        This is not a real online service! You know you need something <br />
-        like this in your life to help you realize your deepest dreams. <br />
-        Sign up <em>now</em> to get started. <br /><br />
-        You <em>know</em> you want to.
-      </p>
+        <div class="title">
+          <img src="" alt="Odin face" />
+          <p>ODIN</p>
+        </div>
+      </section>
+
+      <!--Right pane top portion -->
+      <section class="right-page">
+        <div class="top-section">
+          <p class="top-info">
+            This is not a real online service! You know you need something
+            <br />
+            like this in your life to help you realize your deepest dreams.
+            <br />
+            Sign up <em>now</em> to get started. <br /><br />
+            You <em>know</em> you want to.
+          </p>
+        </div>
+
+        <!--Right pane form portion -->
+        <section class="middle-section">
+          <div class="form-information">
+            <form action="">
+              <p class="person">
+                <label for="firstname">
+                  <strong>FIRST NAME</strong>
+                  <input type="text" name="firstname" />
+                </label>
+
+                <label for="lastname">
+                  <strong>LAST NAME</strong>
+                  <input type="text" name="lastname" />
+                </label>
+              </p>
+
+              <p class="contact">
+                <label for="email">
+                  <strong>EMAIL</strong>
+                  <input type="text" name="email" />
+                </label>
+
+                <label for="phonenumber">
+                  <strong>PHONE NUMBER</strong>
+                  <input type="text" name="phonenumber" />
+                </label>
+              </p>
+
+              <p class="login">
+                <label for="password">
+                  <strong>PASSWORD</strong>
+                  <input type="text" name="password" />
+                </label>
+
+                <label for="confirm-password">
+                  <strong>CONFIRM PASSWORD</strong>
+                  <input type="text" name="confirm-password" />
+                </label>
+              </p>
+            </form>
+          </div>
+        </section>
+
+        <section class="create-account">
+          <button>Create Account</button>
+          <p>Already have an account? <em>Log in</em></p>
+        </section>
+      </section>
     </div>
-    <!--Right pane form portion -->
-    <section class="middle-section">
-      <div class="form-information">
-        <form action="">
-          <label for="firstname">
-            <input type="text" name="firstname" />
-          </label>
-
-          <label for="lastname">
-            <input type="text" name="lastname" />
-          </label>
-          <label for="email">
-            <input type="text" name="email" />
-          </label>
-          <label for="phonenumber">
-            <input type="text" name="phonenumber" />
-          </label>
-          <label for="password">
-            <input type="text" name="password" />
-          </label>
-          <label for="confirm-password">
-            <input type="text" name="confirm-password" />
-          </label>
-        </form>
-      </div>
-    </section>
-
-    <section class="create-account">
-      <button>Create Account</button>
-      <p>Already have an account? <em>Log in</em></p>
-    </section>
   </body>
 </html>
