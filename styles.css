@@ -19,3 +19,29 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.right {
+  height: 33vw;
+  width: 70vw;
+}
+.top {
+  display: flex;
+  font-family: Roboto, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-left: 7%;
+  margin-top: 12%;
+  height: 33vh;
+  width: 100vw;
+}
+
+.right-middle {
+  height: 33vh;
+}
+
+.form {
+  display: flex;
+}
+.right-bottom {
+  height: 33vh;
+}
