@@ -37,11 +37,35 @@ body {
 
 .right-middle {
   height: 33vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 2px 10px gray;
+}
+.right-middle h2 {
+  font-family: Roboto, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-left: 7%;
 }
 
 .form {
   display: flex;
+  justify-content: left;
+  margin-left: 7%;
+  gap: 100px;
 }
-.right-bottom {
+
+.form label {
+  font-weight: 400;
+}
+.form input {
+  margin: 0 0 15px 0;
+  font-size: 20px;
+  border-radius: 3px;
+  border: 2px solid lightgray;
+}
+
+.form .right-bottom {
   height: 33vh;
 }
