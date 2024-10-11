@@ -94,6 +94,9 @@ input:focus {
 input:invalid {
   border: 1px solid red;
 }
+input:valid {
+  border: 1px solid;
+}
 .form .right-bottom {
   height: 33vh;
 }

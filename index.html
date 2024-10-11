@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
+
     <title>Sign up form</title>
   </head>
   <body>
@@ -34,7 +35,7 @@
               <div><label for="email">EMAIL</label></div>
               <input type="text" id="email" required />
               <div><label for="password">PASSWORD</label></div>
-              <input type="text" id="firstname" required />
+              <input type="password" id="password" required />
             </div>
 
             <div>
@@ -42,9 +43,9 @@
               <input type="text" id="lastname" required />
               <div><label for="phonenumber">PHONE NUMBER</label></div>
               <input type="tel" id="phonenumber" required />
-              <div><label for="password">CONFIRM PASSWORD</label></div>
-              <input type="text" id="firstname" required />
-              <p class="passwords-match">Passwords do not match!</p>
+              <div><label for="confirm-password">CONFIRM PASSWORD</label></div>
+              <input type="password" id="confirm-password" required />
+              <p id="password-error"></p>
             </div>
           </form>
         </div>
@@ -55,6 +56,20 @@
         </div>
       </section>
     </main>
+    <script src="">
+      let passwordError = document.querySelector("#password-error");
+      const password = document.querySelector("#password");
+      const confirmPassword = document.querySelector("#confirmpassword");
+
+      if (password == "" && confirmPassword == "") {
+        passwordError.innerHTML = "*Passwords do not match!";
+      }
+
+      if (password !== confirmPassword) {
+        console.log("Passwords don't match!");
+        // passwordError.innerText = "Passwords do not match!";
+      }
+    </script>
   </body>
 </html>
 S
