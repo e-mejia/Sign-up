@@ -20,6 +20,17 @@ body {
   background-size: cover;
 }
 
+.odin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.odin img {
+  width: 150px;
+}
+.odin p {
+  font-size: 16px;
+}
 .right {
   height: 33vw;
   width: 70vw;
@@ -62,8 +73,8 @@ body {
 .form input {
   margin: 0 0 15px 0;
   font-size: 20px;
-  border-radius: 3px;
-  border: 2px solid lightgray;
+  border-radius: 5px;
+  border: 2px solid #e5e7eb;
 }
 
 .form .right-bottom {
@@ -71,8 +82,20 @@ body {
 }
 
 .right-bottom button {
-  font-size: 1rem;
-  padding: 1rem;
+  font-size: 16px;
+  padding: 12px;
   border-radius: 7px;
-  margin-top: 12px;
+  margin-top: 24px;
+  margin-left: 7%;
+  background-color: #596d48;
+  color: white;
+}
+.right-bottom p {
+  margin-left: 7%;
+  margin-top: 23px;
+  font-weight: 600;
+}
+.right-bottom span {
+  color: #596d48;
+  font-weight: 700;
 }
