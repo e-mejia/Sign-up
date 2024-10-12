@@ -36,6 +36,7 @@
               <input type="text" id="email" required />
               <div><label for="password">PASSWORD</label></div>
               <input type="password" id="password" required />
+              <p id="password-error"></p>
             </div>
 
             <div>
@@ -45,22 +46,28 @@
               <input type="tel" id="phonenumber" required />
               <div><label for="confirm-password">CONFIRM PASSWORD</label></div>
               <input type="password" id="confirm-password" required />
-              <p id="password-error"></p>
             </div>
           </form>
         </div>
 
         <div class="right-bottom">
-          <button type="submit">Create Account</button>
+          <button type="submit" id="btn">Create Account</button>
           <p>Already have an account? <span>Log in</span></p>
         </div>
       </section>
     </main>
-    <script src="">
+    <script>
       let passwordError = document.querySelector("#password-error");
+      const button = document.querySelector("#btn");
       const password = document.querySelector("#password");
-      const confirmPassword = document.querySelector("#confirmpassword");
+      const confirmPassword = document.querySelector("#confirm-password");
 
+      button.addEventListener("click", (e) => {
+        passwordError.style.color = "red";
+        passwordErro.style.margin = "-40px 0px 0px 0px";
+        passwordError.innerHTML = "*Passwords do not match";
+        console.log(e);
+      });
       if (password == "" && confirmPassword == "") {
         passwordError.innerHTML = "*Passwords do not match!";
       }
