@@ -75,7 +75,6 @@ body {
   font-size: 1.7rem;
   font-weight: 700;
   padding-left: 7%;
-  background-color: \#f9f9f9;
 }
 
 .form {
@@ -119,13 +118,12 @@ button {
   color: white;
   box-shadow: 2px 5px #e5e7eb;
 }
+
 .right-bottom p {
   margin-left: 7%;
   margin-top: 23x;
   font-weight: 600;
-  background-color: #f9fafb;
 }
-
 a {
   text-decoration: none;
   color: #596d48;
