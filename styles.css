@@ -17,7 +17,8 @@ body {
 }
 
 .left {
-  width: 30vw;
+  width: 35vw;
+  height: 100vh;
   background-image: url("./Gardenias.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -28,11 +29,13 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 40%;
+  height: 20vh;
   background-color: rgba(0, 0, 0, 0.5);
 }
 .odin img {
   display: block;
   width: 125px;
+  height: 80%;
 }
 .odin p {
   font-size: 100px;
@@ -40,43 +43,51 @@ body {
   font-family: Norse-Bold;
 }
 .right {
-  height: 33vw;
   width: 70vw;
+  height: 100vh;
 }
 .top {
   display: flex;
   font-family: Roboto, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 700;
-  margin-left: 7%;
-  margin-top: 12%;
+  padding-left: 7%;
   height: 33vh;
   width: 100vw;
 }
 
+.right-top {
+  padding-top: 7%;
+}
 .right-middle {
+  /* width: 100vw; */
   height: 33vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  box-shadow: 0 2px 10px gray;
+  box-shadow: 2px 5px #e5e7eb;
+}
+.right-bottom {
+  width: 100vw;
+  height: 33vh;
 }
 .right-middle h2 {
   font-family: Roboto, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 700;
-  margin-left: 7%;
+  padding-left: 7%;
 }
 
 .form {
   display: flex;
-  justify-content: left;
+  /* justify-content: left; */
   margin-left: 7%;
+  width: 80%;
   gap: 100px;
 }
 
-.form label {
-  font-weight: 400;
+label {
+  font-weight: 600;
 }
 input {
   margin: 0 0 15px 0;
@@ -93,28 +104,34 @@ input:focus {
 input:invalid {
   border: 1px solid red;
 }
-input:valid {
-  border: 1px solid;
-}
+
 .form .right-bottom {
   height: 33vh;
 }
 
-.right-bottom button {
-  font-size: 16px;
+button {
+  font-size: 19px;
   padding: 12px;
   border-radius: 7px;
-  margin-top: 27px;
-  margin-left: 7%;
+  margin-top: 35px;
+  margin-left: 5%;
+  padding: 15px 50px 15px 50px;
   background-color: #596d48;
   color: white;
+  box-shadow: 2px 5px #e5e7eb;
 }
 .right-bottom p {
-  margin-left: 7%;
+  margin-left: 5%;
   margin-top: 23x;
   font-weight: 600;
 }
-.right-bottom span {
+
+a {
+  text-decoration: none;
   color: #596d48;
+  font-weight: 700;
+}
+.password-error {
+  margin: -12px 7% 0 0;
   font-weight: 700;
 }

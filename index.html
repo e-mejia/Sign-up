@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
-
     <title>Sign up form</title>
   </head>
   <body>
@@ -31,19 +30,19 @@
           <form action="" method="GET" class="form">
             <div>
               <div><label for="firstname">FIRST NAME</label></div>
-              <input type="text" id="firstname" required />
+              <input type="text" id="firstname"  />
               <div><label for="email">EMAIL</label></div>
-              <input type="text" id="email" required />
+              <input type="text" id="email"  />
               <div><label for="password">PASSWORD</label></div>
               <input type="password" id="password" required />
-              <p id="password-error"></p>
+              <p id="password-error" class="password-error"></p>
             </div>
 
             <div>
               <div><label for="lastname">LAST NAME</label></div>
-              <input type="text" id="lastname" required />
+              <input type="text" id="lastname"  />
               <div><label for="phonenumber">PHONE NUMBER</label></div>
-              <input type="tel" id="phonenumber" required />
+              <input type="tel" id="phonenumber"  />
               <div><label for="confirm-password">CONFIRM PASSWORD</label></div>
               <input type="password" id="confirm-password" required />
             </div>
@@ -52,31 +51,11 @@
 
         <div class="right-bottom">
           <button type="submit" id="btn">Create Account</button>
-          <p>Already have an account? <span>Log in</span></p>
+          <p>Already have an account? <a href=""><span>Log in</span></p></a>
         </div>
       </section>
     </main>
-    <script>
-      let passwordError = document.querySelector("#password-error");
-      const button = document.querySelector("#btn");
-      const password = document.querySelector("#password");
-      const confirmPassword = document.querySelector("#confirm-password");
-
-      button.addEventListener("click", (e) => {
-        passwordError.style.color = "red";
-        passwordErro.style.margin = "-40px 0px 0px 0px";
-        passwordError.innerHTML = "*Passwords do not match";
-        console.log(e);
-      });
-      if (password == "" && confirmPassword == "") {
-        passwordError.innerHTML = "*Passwords do not match!";
-      }
-
-      if (password !== confirmPassword) {
-        console.log("Passwords don't match!");
-        // passwordError.innerText = "Passwords do not match!";
-      }
-    </script>
+    <script src="./sign-up.js"></script>
   </body>
 </html>
 S
