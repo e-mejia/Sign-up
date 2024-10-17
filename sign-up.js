@@ -11,9 +11,12 @@ button.addEventListener("click", (e) => {
 });
 if (password == "" && confirmPassword == "") {
   passwordError.innerHTML = "*Passwords do not match!";
+  password.value = "";
+  confirmPassword = "";
 }
 
 if (password !== confirmPassword) {
   console.log("Passwords don't match!");
+
   // passwordError.innerText = "Passwords do not match!";
 }
