@@ -5,18 +5,18 @@ const password = document.querySelector("#password");
 const confirmPassword = document.querySelector("#confirm-password");
 
 button.addEventListener("click", (e) => {
-  passwordError.style.color = "red";
-  passwordError.innerHTML = "*Passwords do not match";
+  e.preventDefault();
+  if (password.value == "" && confirmPassword.value == "") {
+    passwordError.style.color = "red";
+    passwordError.innerHTML = "*Passwords do not match!";
+  }
+
   console.log(e);
 });
-if (password == "" && confirmPassword == "") {
-  passwordError.innerHTML = "*Passwords do not match!";
-  password.value = "";
-  confirmPassword = "";
-}
 
 if (password !== confirmPassword) {
-  console.log("Passwords don't match!");
+  passwordError.style.color = "red";
+  passwordError.innerHTML = "*Passwords do not match!";
 
   // passwordError.innerText = "Passwords do not match!";
 }
