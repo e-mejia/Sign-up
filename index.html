@@ -27,12 +27,14 @@
 
         <div class="right-middle">
           <h2>Let's do this!</h2>
-          <form action="" method="GET" class="form">
+          <form action="" method="GET" class="form" id="form">
             <div>
-              <div><label for="firstname">FIRST NAME</label></div>
-              <input type="text" id="firstname"  />
+              <div>
+                <label for="firstname">FIRST NAME</label>
+              </div>
+              <input type="text" id="firstname"  required/>
               <div><label for="email">EMAIL</label></div>
-              <input type="text" id="email"  />
+              <input type="text" id="email"  required/>
               <div><label for="password">PASSWORD</label></div>
               <input type="password" id="password" required />
               <p id="password-error" class="password-error"></p>
@@ -40,23 +42,20 @@
 
             <div>
               <div><label for="lastname">LAST NAME</label></div>
-              <input type="text" id="lastname"  />
+              <input type="text" id="lastname"  required/>
               <div><label for="phonenumber">PHONE NUMBER</label></div>
-              <input type="tel" id="phonenumber"  />
+              <input type="tel" id="phonenumber"  required/>
               <div><label for="confirm-password">CONFIRM PASSWORD</label></div>
               <input type="password" id="confirm-password" required />
             </div>
           </div>
 
-
-            <div class="right-bottom">
-              <button type="submit" id="btn">Create Account</button>
+          <div class="right-bottom">
+              <button type="submit">Create Account</button>
               <p>Already have an account? <a href=""><span>Log in</span></p></a>
             </div>
           </form>
-        
-
-        
+      
       </section>
     </main>
     <script src="./sign-up.js"></script>
