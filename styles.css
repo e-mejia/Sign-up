@@ -95,12 +95,15 @@ input {
   border: 2px solid #e5e7eb;
 }
 
+input:valid {
+  border-color: green;
+}
 input:focus {
   border: 1px solid blue;
 }
 
 input:invalid {
-  border: 1px solid red;
+  border-color: red;
 }
 
 .form .right-bottom {

@@ -13,6 +13,3 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
   }
 });
-
-password.style.color = "green";
-confirmPassword.style.color = "green";
